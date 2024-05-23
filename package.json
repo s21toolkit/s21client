@@ -1,0 +1,36 @@
+{
+  "name": "@s21toolkit/client",
+  "description": "GQL API client for edu.21-school.ru",
+  "version": "0.0.1",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "lint:tsc": "tsc",
+    "lint:biome": "biome check .",
+    "lint": "pnpm lint:biome && pnpm lint:tsc",
+    "fix:biome": "biome check --apply .",
+    "fix": "pnpm fix:biome",
+    "build:tsup": "tsup",
+    "build": "pnpm lint && pnpm build:tsup",
+    "postversion": "git push && git push --tags",
+    "release": "npm version -m 'chore(release): %s' --",
+    "prepublishOnly": "pnpm build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@s21toolkit/auth": "^1.0.0"
+  },
+  "peerDependencies": {
+    "graphql-request": "^6.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@s21toolkit/shared": "^1.3.4",
+    "@total-typescript/ts-reset": "^0.5.1",
+    "graphql-request": "^6.1.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts"
+}
