@@ -1,7 +1,7 @@
 {
   "name": "@s21toolkit/client",
   "description": "GQL API client for edu.21-school.ru",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "private": false,
   "scripts": {
