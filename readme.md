@@ -11,10 +11,10 @@ npm install @s21toolkit/{client,client-schema}
 ## Использование
 
 ```ts
-import { Client, UserAuthAdapter } from "@s21toolkit/client"
+import { Client, UserAuthProvider } from "@s21toolkit/client"
 import { Schema } from "@s21toolkit/client-schema"
 
-const client = new Client(Schema, new UserAuthAdapter("username", "p4ssw0rd"))
+const client = new Client(Schema, new UserAuthProvider("username", "p4ssw0rd"))
 
 const user = await client.api.getCurrentUser()
 ```
