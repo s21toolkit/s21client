@@ -33,10 +33,5 @@
     "typescript": "^5.7.3"
   },
   "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "pnpm": {
-    "overrides": {
-      "@s21toolkit/client-schema": "link:../s21client-schema"
-    }
-  }
+  "types": "build/index.d.ts"
 }

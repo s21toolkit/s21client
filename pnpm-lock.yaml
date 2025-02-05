@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@s21toolkit/client-schema': link:../s21client-schema
-
 importers:
 
   .:
